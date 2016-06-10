@@ -1,10 +1,31 @@
 //Business Logic//
 var workingArray = [];
+var userPingNum = 0;
+var userPongNum = 0;
 
 function getInput() {
   var userNum = parseInt($('input').val());
   return userNum;
 };
+
+function getUserRange() {
+  var userRng = parseInt($('#userRange').val());
+  return userRng;
+  alert(userRng);
+};
+
+function getUserPing() {
+  var userPi = parseInt($('#userPing').val());
+  return userPi;
+  alert(userPin);
+};
+
+function getUserPong() {
+  var userPo = parseInt($('#userPong').val());
+  return userPo;
+  alert(userPo);
+};
+
 function createArray(inp) {
   workingArray = [];
   for (i=1; i<=inp; i++) {
@@ -22,6 +43,18 @@ function pingArray(pingnum) {
     return pingnum;
   };
 };
+
+function userPingArray(pingnum) {
+  if ((pingnum % userPingNum === 0) && (pingnum % userPongNum ===0)) {
+    return "Pingpong!"
+  } else if (pingnum % userPingNum === 0) {
+    return "Pong!"
+  } else if (pingnum % userPongNum === 0) {
+  return "Ping!";
+  } else {
+    return pingnum;
+  };
+};
 function makeList(elem, ind, arr) {
   $("#outputList").append("<li>" + elem + "</li>");
 };
@@ -30,12 +63,24 @@ function clearList() {
 }
 //User Input Logic//
 $(document).ready(function() {
-  $("form").submit(function(event) {
+
+  $("#mainsubmit").submit(function(event) {
     event.preventDefault();
     clearList();
     var inputNum = getInput();
     createArray(inputNum);
     var pingedArray = workingArray.map(pingArray);
     pingedArray.forEach(makeList);
+  });
+
+  $("#usersubmit").submit(function(event) {
+    event.preventDefault();
+    clearList();
+    var inputNum = getUserRange();
+    userPingNum = getUserPing();
+    userPongNum = getUserPong();
+    createArray(inputNum);
+    var userPingedArray = workingArray.map(userPingArray);
+    userPingedArray.forEach(makeList);
   });
 });

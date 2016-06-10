@@ -17,6 +17,11 @@ ul {
   color: #DAD7CD;
 }
 
-.btn {
+button {
   background-color: #DAD7CD;
+}
+
+input{
+ display: block;
+ margin-bottom: 12px;
 }

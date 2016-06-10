@@ -20,13 +20,21 @@
       This page will show a list of the numbers from 1 up to a number that you enter, unless the number:
       <ul><li>is a multiple of 3, in which case it becomes "Ping!"</li>
         <li>is a multiple of 5, in which case it becomes "Pong!"</li>
-        <li>is a multiple of both 3 and 5, in which case it becomes "Pingpong!"</li></ul
+        <li>is a multiple of both 3 and 5, in which case it becomes "Pingpong!"</li></ul>
       </p>
 
-      <form class="form-group" action="index.html" method="post">
+      <form class="form-group mainping" id="mainsubmit">
         <label for="numberInput">Please enter a number:</label>
         <input type="text" name="numberInput" value="" id ="input"></input>
-        <button type="submit" class="btn" name="numberInput" id="submit">Submit Your Number!</button>
+        <button type="submit" class="btn" name="numberInput" id="mainsubmit">Submit Your Number!</button>
+      </form>
+
+      <form class="form-group userping" id="usersubmit">
+        <label for="otherinput">Or, you can enter a set of numbers to ping and pong on, and a number to count up to.</label>
+        <p>Ping on this value: <input type="text" name="userPing" value="" id="userPing"></input></p>
+        <p>Pong on this value: <input type="text" name="userPong" value="" id="userPong"></input></p>
+        <p>Count up to this value: <input type="text" name="userRange" value="" id="userRange"></input></p>
+        <button type="submit" class="btn" name="numberInput" id="usersubmit">Submit Your Own Numbers!</button>
       </form>
 
       <ul id="outputList">
