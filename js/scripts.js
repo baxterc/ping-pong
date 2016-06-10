@@ -1,7 +1,5 @@
 //Business Logic//
 var workingArray = [];
-// var userPingNum = 3;
-// var userPongNum = 5;
 //Functions converting user input//
 function getInput() {
   var userNum = parseInt($('input').val());
