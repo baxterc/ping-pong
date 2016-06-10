@@ -3,29 +3,23 @@ body {
   color: #344E41;
   font-size: 2em;
 }
-
 h1 {
   text-align: center;
 }
-
-#outputList {
-  list-style: none;
-}
-
-#header {
-  background-color: #588157;
-  color: #DAD7CD;
-}
-
 button {
   background-color: #DAD7CD;
 }
-
 input{
  display: block;
  margin-bottom: 12px;
 }
-
+#outputList {
+  list-style: none;
+}
+#header {
+  background-color: #588157;
+  color: #DAD7CD;
+}
 #onePing {
   display: none;
 }
