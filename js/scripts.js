@@ -14,10 +14,14 @@ function createArray(inp) {
 };
 
 function pingArray(pingnum) {
-  if (pingnum % 3 === 0) {
-    return "Ping!";
+  if (pingnum % 15 === 0) {
+    return "Pingpong!"
+  } else if (pingnum % 5 === 0) {
+    return "Pong!"
+  } else if (pingnum % 3 === 0) {
+  return "Ping!";
   } else {
-    return pingnum
+    return pingnum;
   };
 };
 
