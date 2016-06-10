@@ -18,4 +18,11 @@ This program should:
   Input Example: 15
   Output Example: 1, 2, ping, 4, pong, ping, 7, 8, ping, pong, 11, ping, 13, 14, pingpong
 
-  
+- Display the list of numbers as a list on the page.
+  Input Example: 5
+  Output Example:
+  *1
+  *2
+  *3
+  *4
+  *5

@@ -25,28 +25,22 @@ function pingArray(pingnum) {
   };
 };
 
-//   (p=0; p<=(pingarr.length()); p++) {
-//     var pingCheck = parseInt(pingarr[p]);
-//     if (pingCheck % 3 === 0) {
-//       pingarr[p] = "ping";
-//     };
-//   };
-// };
+function makeList(elem, ind, arr) {
+  $("#outputList").append("<li>" + elem + "</li>")
+}
+
 
 //User Input Logic//
 $(document).ready(function() {
 
-  $("form").submit(function() {
+  $("form").submit(function(event) {
+    event.preventDefault();
     var inputNum = getInput();
-    alert(inputNum);
-    alert(typeof(inputNum));
 
     var plainArray = createArray(inputNum);
-    alert(workingArray);
 
     var pingedArray = workingArray.map(pingArray);
-    alert(pingedArray);
+
+    pingedArray.forEach(makeList);
   });
-
-
 });
