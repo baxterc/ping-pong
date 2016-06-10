@@ -1,7 +1,7 @@
 //Business Logic//
 var workingArray = [];
-var userPingNum = 3;
-var userPongNum = 5;
+// var userPingNum = 3;
+// var userPongNum = 5;
 //Functions converting user input//
 function getInput() {
   var userNum = parseInt($('input').val());
@@ -33,10 +33,10 @@ function createArray(inp) {
   };
 };
 function pingArray(pingnum) {
-  if ((pingnum % userPingNum === 0) && (pingnum % userPongNum ===0)) {
-    return "Pingpong!"
+  if (pingnum % (userPingNum * userPongNum) === 0) {
+    return "Pingpong!";
   } else if (pingnum % userPingNum === 0) {
-    return "Ping!"
+    return "Ping!";
   } else if (pingnum % userPongNum === 0) {
   return "Pong!";
   } else {
