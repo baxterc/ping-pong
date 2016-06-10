@@ -1,6 +1,13 @@
 
+#Ping Pong Pattern Replacer
+
+###A JavaScript Excercise for Epicodus by Charlie Baxter
+###Made June 10, 2016
 
 
+##Description
+
+#####This page takes two different sets of input from the user.  In the first set, the user provides a single number and the page counts from one up to that number.  The page replaces multiples of 3 with the word "Ping!", multiples of 5 with "Pong!", and multiples of 15 (the product of 3 and 5) with "Pingpong!"  The second set of input lets the user determine the range as well as the numbers whose multiples should be pinged and ponged.  The product of the ping and pong numbers also  
 Specifications:
 
 This program should:

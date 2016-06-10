@@ -13,26 +13,26 @@ function getInput() {
 };
 function getUserPing() {
   var userPi = parseInt($('#userPing').val());
-    if (isNaN(userPi) === false) {
-    return userNum;
-  } else {
+    if (isNaN(userPi) === true) {
     alert("Please enter a number greater than zero.");
+  } else {
+    return userPi;
   }
 };
 function getUserPong() {
   var userPo = parseInt($('#userPong').val());
-    if (isNaN(userPo) === false) {
-    return userNum;
-  } else {
+  if (isNaN(userPo) === true) {
     alert("Please enter a number greater than zero.");
+  } else {
+    return userPo;
   }
 };
 function getUserRange() {
   var userRng = parseInt($('#userRange').val());
-    if (isNaN(userRng) === false) {
-    return userNum;
-  } else {
+    if (isNaN(userRng) === true) {
     alert("Please enter a number greater than zero.");
+  } else {
+    return userRng;
   }
 };
 //Function to create array of values//
@@ -62,7 +62,7 @@ function makeList(elem, ind, arr) {
 function clearList() {
   $("#outputList").empty();
   $("#onePing").hide();
-}
+};
 //User Input Logic//
 $(document).ready(function() {
   $("#mainsubmit").submit(function(event) {
