@@ -1,6 +1,6 @@
 body {
   background-color: #A3B18A;
-  color: #344E41;
+  color: #3A5A40;
   font-size: 2em;
 }
 h1 {
@@ -13,6 +13,9 @@ input{
  display: block;
  margin-bottom: 12px;
 }
+a {
+  color: #344E41;
+}
 #outputList {
   list-style: none;
 }
@@ -22,8 +25,8 @@ input{
 }
 #onePing {
   display: none;
+  float: right;
 }
-
 #myModal {
   display: none;
 }
