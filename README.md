@@ -1,4 +1,6 @@
 
+
+
 Specifications:
 
 This program should:
@@ -30,3 +32,7 @@ This program should:
 - Allow the user to enter a range of numbers and numbers to "ping," "pong" and "pingpong" on.
   Input Example: Range of 8, ping on 2, pong on 3
   Output Example: 1, ping, pong, ping, 5, pingpong, 7, 8
+
+- Alert users when they provide incorrect input types.
+  Input Example: Q
+  Output Example: Sorry, please enter a number.

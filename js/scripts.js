@@ -5,22 +5,35 @@ var workingArray = [];
 //Functions converting user input//
 function getInput() {
   var userNum = parseInt($('input').val());
-  return userNum;
-};
-function getUserRange() {
-  var userRng = parseInt($('#userRange').val());
-  return userRng;
-  alert(userRng);
+    if (isNaN(userNum) === false) {
+    return userNum;
+  } else {
+    alert("Please enter a number greater than zero.");
+  }
 };
 function getUserPing() {
   var userPi = parseInt($('#userPing').val());
-  return userPi;
-  alert(userPin);
+    if (isNaN(userPi) === false) {
+    return userNum;
+  } else {
+    alert("Please enter a number greater than zero.");
+  }
 };
 function getUserPong() {
   var userPo = parseInt($('#userPong').val());
-  return userPo;
-  alert(userPo);
+    if (isNaN(userPo) === false) {
+    return userNum;
+  } else {
+    alert("Please enter a number greater than zero.");
+  }
+};
+function getUserRange() {
+  var userRng = parseInt($('#userRange').val());
+    if (isNaN(userRng) === false) {
+    return userNum;
+  } else {
+    alert("Please enter a number greater than zero.");
+  }
 };
 //Function to create array of values//
 function createArray(inp) {
@@ -68,7 +81,7 @@ $(document).ready(function() {
     var inputNum = getUserRange();
     userPingNum = getUserPing();
     userPongNum = getUserPong();
-    createArray(inputNum);
+    createArray(inputNum); //takes inputNum to make length of array
     var userPingedArray = workingArray.map(pingArray);
     userPingedArray.forEach(makeList);
   });
