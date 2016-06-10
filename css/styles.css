@@ -1,0 +1,17 @@
+body {
+  background-color: #A3B18A;
+  color: #344E41;
+}
+
+h1 {
+  text-align: center;
+}
+
+#header {
+  background-color: #588157;
+  color: #DAD7CD;
+}
+
+.btn {
+  background-color: #DAD7CD;
+}
