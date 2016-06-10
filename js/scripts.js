@@ -28,6 +28,9 @@ function getUserPong() {
 
 function createArray(inp) {
   workingArray = [];
+  if (((inp / userPingNum)>=1) && ((inp / userPingNum) <= 2)) {
+    $("#onePing").show();
+  };
   for (i=1; i<=inp; i++) {
     workingArray.push(i);
   };
@@ -57,9 +60,6 @@ function userPingArray(pingnum) {
 };
 function makeList(elem, ind, arr) {
   $("#outputList").append("<li>" + elem + "</li>");
-  if (userPingNum >=1 && userPingNum < 2) {
-    $("#onePing").show();
-  }
 };
 function clearList() {
   $("#outputList").empty();
