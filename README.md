@@ -1,8 +1,8 @@
 
 #Ping Pong Pattern Replacer
 
-###A JavaScript Excercise for Epicodus by Charlie Baxter
-###Made June 10, 2016
+####A JavaScript Excercise for Epicodus by Charlie Baxter
+####Made June 10, 2016
 
 
 ##Description
