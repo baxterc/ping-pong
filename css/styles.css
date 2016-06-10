@@ -1,10 +1,15 @@
 body {
   background-color: #A3B18A;
   color: #344E41;
+  font-size: 2em;
 }
 
 h1 {
   text-align: center;
+}
+
+ul {
+  list-style: none;
 }
 
 #header {
