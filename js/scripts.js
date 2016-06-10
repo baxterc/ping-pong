@@ -36,9 +36,9 @@ function pingArray(pingnum) {
   if (pingnum % 15 === 0) {
     return "Pingpong!"
   } else if (pingnum % 5 === 0) {
-    return "Pong!"
+    return "Ping!"
   } else if (pingnum % 3 === 0) {
-  return "Ping!";
+  return "Pong!";
   } else {
     return pingnum;
   };
@@ -48,18 +48,22 @@ function userPingArray(pingnum) {
   if ((pingnum % userPingNum === 0) && (pingnum % userPongNum ===0)) {
     return "Pingpong!"
   } else if (pingnum % userPingNum === 0) {
-    return "Pong!"
+    return "Ping!"
   } else if (pingnum % userPongNum === 0) {
-  return "Ping!";
+  return "Pong!";
   } else {
     return pingnum;
   };
 };
 function makeList(elem, ind, arr) {
   $("#outputList").append("<li>" + elem + "</li>");
+  if (userPingNum >=1 && userPingNum < 2) {
+    $("#onePing").show();
+  }
 };
 function clearList() {
   $("#outputList").empty();
+  $("#onePing").hide();
 }
 //User Input Logic//
 $(document).ready(function() {

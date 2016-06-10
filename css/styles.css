@@ -8,7 +8,7 @@ h1 {
   text-align: center;
 }
 
-ul {
+#outputList {
   list-style: none;
 }
 
@@ -24,4 +24,8 @@ button {
 input{
  display: block;
  margin-bottom: 12px;
+}
+
+#onePing {
+  display: none;
 }
